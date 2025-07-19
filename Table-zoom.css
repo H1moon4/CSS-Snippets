@@ -1,0 +1,25 @@
+:root {
+  --space-cadet: #1a1a4b;
+  --ultra-violet: #5b5a9dff;
+}
+
+/* ============= Zoom into table on hover ============= */
+.markdown-preview-view table {
+  max-width: 80%;
+  margin: 2em auto;
+  overflow: hidden;
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  border-bottom: 3px solid var(--ultra-violet);
+  background-color: var(--space-cadet);
+}
+
+.markdown-preview-view table:hover {
+  z-index: 100;
+  position: relative;
+  transform: scale(1.2);
+}
+
+.markdown-preview-view table th {
+  background: var(--ultra-violet);
+}
